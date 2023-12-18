@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #FC466B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.box{
+    border: 1px solid red;
+    width: 30vw;
+    height: 130vh;
+    margin-left: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(222, 61, 61, 0.441);
+    box-shadow: 2px 3px 3px 5px rgba(22, 182, 203, 0.563);
+}
+form{
+    background-color: aqua;
+    border: 1px dotted blue;
+    padding: 5px;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+}
+.sub{
+    padding: 5px;
+    border-radius: 10px;
+}
+.sub:hover{
+    background-color: rgba(219, 37, 37, 0.713);
+    color: white;
+}
