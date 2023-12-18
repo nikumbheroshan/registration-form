@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./Asset/CSS/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="box">
+  <form id="myform">
+   
+    <h1>Bank loan Application form</h1>
+    <p>*kindly enter the correct information in the loan application form</p>
+    <label for="">Name:-</label><br>
+    <input type="text" name="name" id="name" placeholder="enter name"><br><br>
+    <label for="">Email id:-</label><br>
+    <input type="email" name="email" id="email" placeholder="enter email id"><br><br>
+    <label for="">Pan:-</label><br>
+    <input type="text" name="pan" id="pan" enter number><br><br>
+    <label for="">Enter loan Amount(rs)</label><br>
+    <input type="number" name="number" id="number" enter amount><br><br>
+    <label for="">Loan Tenure</label><br>
+    <input type="number" name="tenure" id="tenure" enter year><br><br>
+    <button type="button" class="sub" onclick="myfun"> Calculate EMI</button><br>
+    <h4>Estimated EMI:</h4>
+   <p id="demo"> </p>
+    <button type="button" class="btn btn-dark" onclick="myfun()"><a href="form.html"> Submit</button></a>
+    <button type="reset" class="btn btn-danger">Reset</button>
+</div>
+  </form>
+  <script>
+   
+  </script>
+  <script>
+    localStorage.setItem("name", "felix")
+    var output = localStorage.getItem("name")
+    
+    function myfun(){
+        document.getElementById("demo").innerHTML = output;
+        alert("OTP-123")
+        
+    }
+
+  </script>
+
+
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./Asset/CSS/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="box">
+        <form id="myform">
+
+            <h1>Bank loan Application form</h1>
+            <p>*kindly enter the correct information in the loan application form</p>
+            <label for="">Name:-</label><br>
+            <input type="text" name="name" id="name" placeholder="enter name"><br><br>
+            <label for="">Email id:-</label><br>
+            <input type="email" name="email" id="email" placeholder="enter email id"><br><br>
+            <label for="">Pan:-</label><br>
+            <input type="text" name="pan" id="pan" enter number><br><br>
+            <label for="">Enter loan Amount(rs)</label><br>
+            <input type="number" name="number" id="number" enter amount><br><br>
+            <label for="">Loan Tenure</label><br>
+            <input type="number" name="tenure" id="tenure" enter year><br><br>
+            <button type="button" class="sub" onclick="calculateEMI()"> Calculate EMI</button><br>
+            <h4>Estimated EMI:</h4>
+            <p id="demo"> </p>
+            <button type="button" class="btn btn-dark" onclick="generateOTP()" > Submit</button></a>
+            <button type="reset" class="btn btn-danger">Reset</button>
+        </form>
+    </div>
+
+    <script>
+        function calculateEMI() {
+            // Your EMI calculation logic here
+            // This is just a placeholder
+            document.getElementById("demo").innerHTML = "Calculated EMI: $100";
+        }
+
+        function generateOTP() {
+            var otp = Math.floor(1000 + Math.random() * 9000); // Generate a random 4-digit OTP
+            localStorage.setItem("otp", otp); // Store OTP in localStorage
+            alert("OTP generated: " + otp);
+            window.location.href = "form.html";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="./Asset/js/form.js"></script>
+</body>
+
+</html>
